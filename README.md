@@ -63,4 +63,11 @@ Additionally, copy the following files from multicom3/complex_alignment_generati
 plm_interact_seq_similarity_v3.py
 plm_interact_stru_similarity_v3.py
 ```
+Replace the pipeline_v2.py file in the MULTICOM/multicom3/quaternary_structure_generation/ directory with the one from multicom3/quaternary_structure_generation/.
+
+
+# **Running the protein complex structure prediction pipeline**
+```
+python your/path/to/multicom3/heteromer_4.py --option_file=your/path/to/MULTICOM/bin/db_option --fasta_path=your/path/to/fasta/file --output_dir=your/path/to/output --run_img=false
+```
 
