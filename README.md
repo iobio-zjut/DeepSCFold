@@ -49,7 +49,7 @@ biopython>=1.83
 
 ### **Modified from [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0)**
 
-**Replace the following files** in `MULTICOM/multicom3/complex_alignment_generation/` with the versions from `multicom3/complex_alignment_generation/`:
+- **Replace the following files** in `MULTICOM/multicom3/complex_alignment_generation/` with the versions from `multicom3/complex_alignment_generation/`:
 
   - `pipeline_v3.py`
   - `pdb_interact_v3.py`
@@ -73,5 +73,4 @@ python your/path/to/multicom3/heteromer_4.py --option_file=your/path/to/MULTICOM
 ```
 Cntinue with the remaining steps of the MULTICOM3 pipeline to generate the complex structure.
 
-- **NOTE:** For model quality assessment, please refer to **DeepUMQA-X**:  
-[http://zhanglab-bioinf.com/DeepUMQA-X/](http://zhanglab-bioinf.com/DeepUMQA-X/)
+**NOTE:** For model quality assessment, please refer to **DeepUMQA-X**: [http://zhanglab-bioinf.com/DeepUMQA-X/](http://zhanglab-bioinf.com/DeepUMQA-X/)
