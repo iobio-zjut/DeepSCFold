@@ -13,6 +13,8 @@ git clone --recursive https://github.com/iobio-zjut/DeepSCFold
 
 # **Installation**
 
+## **Install [AlphaFold/AlphaFold-Multimer](https://github.com/google-deepmind/alphafold), [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0) and other required third-party packages**
+
 ### **Install miniconda**
 
 ``` bash
@@ -45,3 +47,19 @@ tqdm>=4.67.1
 biopython>=1.83
 ```
 
+### **modified from [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0)**
+
+Replace the following files in the MULTICOM/multicom3/complex_alignment_generation/ directory with their counterparts from the multicom3/complex_alignment_generation/ directory:
+```
+pipeline_v3.py
+pdb_interact_v3.py
+species_interact_v3.py
+string_interact_v3.py
+uniclust_oxmatch_v3.py
+uniprot_distance_v3.py
+```
+Additionally, copy the following files from multicom3/complex_alignment_generation/ into the MULTICOM/multicom3/complex_alignment_generation/ directory:
+```
+plm_interact_seq_similarity_v3.py
+plm_interact_stru_similarity_v3.py
+```
