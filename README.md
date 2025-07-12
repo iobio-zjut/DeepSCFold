@@ -47,7 +47,7 @@ tqdm>=4.67.1
 biopython>=1.83
 ```
 
-### **modified from [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0)**
+### **Modified from [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0)**
 
 Replace the following files in the MULTICOM/multicom3/complex_alignment_generation/ directory with their counterparts from the multicom3/complex_alignment_generation/ directory:
 ```
@@ -63,3 +63,4 @@ Additionally, copy the following files from multicom3/complex_alignment_generati
 plm_interact_seq_similarity_v3.py
 plm_interact_stru_similarity_v3.py
 ```
+
