@@ -49,25 +49,29 @@ biopython>=1.83
 
 ### **Modified from [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0)**
 
-Replace the following files in the MULTICOM/multicom3/complex_alignment_generation/ directory with their counterparts from the multicom3/complex_alignment_generation/ directory:
-```
-pipeline_v3.py
-pdb_interact_v3.py
-species_interact_v3.py
-string_interact_v3.py
-uniclust_oxmatch_v3.py
-uniprot_distance_v3.py
-```
-Additionally, copy the following files from multicom3/complex_alignment_generation/ into the MULTICOM/multicom3/complex_alignment_generation/ directory:
-```
-plm_interact_seq_similarity_v3.py
-plm_interact_stru_similarity_v3.py
-```
-Replace the pipeline_v2.py file in the MULTICOM/multicom3/quaternary_structure_generation/ directory with the one from multicom3/quaternary_structure_generation/.
+**Replace the following files** in `MULTICOM/multicom3/complex_alignment_generation/` with the versions from `multicom3/complex_alignment_generation/`:
 
+  - `pipeline_v3.py`
+  - `pdb_interact_v3.py`
+  - `species_interact_v3.py`
+  - `string_interact_v3.py`
+  - `uniclust_oxmatch_v3.py`
+  - `uniprot_distance_v3.py`
+
+- **Add the following new files** from `multicom3/complex_alignment_generation/` to `MULTICOM/multicom3/complex_alignment_generation/`:
+
+  - `plm_interact_seq_similarity_v3.py`
+  - `plm_interact_stru_similarity_v3.py`
+
+- **Replace the file** `pipeline_v2.py` in `MULTICOM/multicom3/quaternary_structure_generation/` with the one from `multicom3/quaternary_structure_generation/`.
 
 # **Running the protein complex structure prediction pipeline**
+
+The monomer MSA, template, and structure can be generated following the standard MULTICOM3 pipeline. Then, use the code below to generate the pair-MSA.
 ```
 python your/path/to/multicom3/heteromer_4.py --option_file=your/path/to/MULTICOM/bin/db_option --fasta_path=your/path/to/fasta/file --output_dir=your/path/to/output --run_img=false
 ```
+Cntinue with the remaining steps of the MULTICOM3 pipeline to generate the complex structure.
 
+- **NOTE:** For model quality assessment, please refer to **DeepUMQA-X**:  
+[http://zhanglab-bioinf.com/DeepUMQA-X/](http://zhanglab-bioinf.com/DeepUMQA-X/)
