@@ -16,6 +16,10 @@ git clone --recursive https://github.com/iobio-zjut/DeepSCFold
   
 - **Add the download file** `trained_model/seq_interact_model/models/model_tiny.pt` to `seq_interact_model/models/`.
 
+## **Download [the ESM-2 model](https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt) used in DeepSCFold.**
+
+- **Add the download file** `esm2_t33_650M_UR50D.pt` to `MSArank_model/esm/saved_models/ESM-2/` and `seq_interact_model/esm/saved_models/ESM-2/`.
+
 # **Installation**
 
 ## **Install [AlphaFold/AlphaFold-Multimer](https://github.com/google-deepmind/alphafold), [MULTICOM3](https://github.com/BioinfoMachineLearning/MULTICOM3/releases/tag/v1.0.0) and other required third-party packages**
