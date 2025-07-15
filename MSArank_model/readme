@@ -1,0 +1,17 @@
+module load anaconda
+source activate pytorch
+
+query=/mydata/minghuah/MULTICOM/MSArank_model/examples/query1.fasta
+target=/mydata/minghuah/MULTICOM/MSArank_model/examples/target1.fasta
+script=/mydata/minghuah/MULTICOM/MSArank_model/predict_for_msa_rank_v2.py
+output=/mydata/minghuah/MULTICOM/MSArank_model/result
+
+python ${script} --query_path ${query} --target_path ${target} --output_dir ${output}
+
+
+script=/mydata/minghuah/MULTICOM/MSArank_model/msa_deal_for_MULTICOM.py
+input_csv=/mydata/minghuah/MULTICOM/MSArank_model/result/final_scores.csv
+output_csv=/mydata/minghuah/MULTICOM/MSArank_model/result/sort_scores.csv
+input_msa=/mydata/minghuah/MULTICOM/MSArank_model/examples/target1.fasta
+output_msa=/mydata/minghuah/MULTICOM/MSArank_model/result/target_new.a3m
+python ${script} --input_file ${input} --output_file ${output} --msa_file ${input_msa} --sorted_msa_file ${output_msa}
