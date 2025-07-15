@@ -10,6 +10,11 @@ DeepSCFold is designed for high-accuracy protein complex structure modeling usin
 ```
 git clone --recursive https://github.com/iobio-zjut/DeepSCFold 
 ```
+## **Download [the pretrained model weights](http://zhanglab-bioinf.com/DeepSCFold/download/trained_model.tar.gz) used in DeepSCFold.**
+
+- **Add the download file** `trained_model/MSArank_model/models/model_for_fast_rank.pkl` to `MSArank_model/models/`.
+  
+- **Add the download file** `trained_model/seq_interact_model/models/model_tiny.pt` to `seq_interact_model/models/`.
 
 # **Installation**
 
